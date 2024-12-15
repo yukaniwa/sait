@@ -1,0 +1,762 @@
+@charset "utf-8";
+
+/* header */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body  {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Vollkorn', serif;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 28px;
+  font-family: 'Vollkorn', serif;
+}
+
+
+header {
+  margin: 0;
+  display: flex;
+  padding: 35px 35px;
+  align-items: center;
+  justify-content: space-between;
+position: sticky;
+position: -webkit-sticky;
+top: 0;
+}
+
+  
+
+.sss img{
+  width: 70px;
+  height: 70px;
+}
+.sp-menu {
+  margin-left: auto;
+}
+
+.sp-menu #open {
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+.overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li {
+  margin-top: 24px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .3s, transform .3s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.overlay.show li:nth-child(1) {
+  transition-delay: .1s;
+}
+
+.overlay.show li:nth-child(2) {
+  transition-delay: .2s;
+}
+
+.overlay.show li:nth-child(3) {
+  transition-delay: .3s;
+}
+
+.pc-menu {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+/* enn */
+.enn {
+  width: 50px;
+  height: 100px;
+  margin: 50px 0 0 140px;
+  font-size: 12px;
+}
+div svg {
+  overflow: visible;
+}
+div path {
+  fill: none;
+}
+div text {
+  fill: black;
+}
+.block {
+  width: 160px;
+  height: 160px;
+  margin: auto;
+}
+.circleText {
+  overflow: visible;
+  animation: rotation 18s linear infinite;
+  &__circle {
+    fill: none;
+  }
+  &__text {
+    fill: #000;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* name */
+
+.name h1{
+  font-size: 60px;
+}
+.name{
+  text-align: center;
+  margin: 0 50px 0 50px;
+}
+.niwa3{
+  width: 300px;
+  height: 450px; 
+  object-fit: cover;
+}
+.noo img{
+  display: block;
+  margin: 0 auto;
+margin-top: 100px; 
+text-align: center;
+
+}
+.noo {
+  margin: 0 auto;
+  text-align: center;
+}
+/* main1 */
+.main1{
+text-align: center;
+padding: 2px 30px;
+margin-top: 100px;
+}
+.desc {
+  margin: 50px; 
+  font-size: 14px;
+  font-weight: normal;
+}
+/* main */
+.main {
+margin: auto;
+}
+.main a {
+  all: unset;
+  border: 1px solid #202022;
+  color: #202022;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 20px;
+  text-align: center;
+}
+.main a:hover {
+  background-color: #cacaca;
+  transition: none;
+  color: white;
+}
+.pic1{
+  width: 300px;
+  height: 350px;
+}
+.pic{
+  margin: 10px;
+  text-align: center;
+}
+  .desc{
+    margin: 45px;
+  }
+  .desc h2{
+    font-size: 22px;
+  }
+
+
+
+/* skills */
+.skk{
+  margin: 0 auto;
+  padding: 8px 20px;
+}
+.skk h1{
+  text-align: center;
+}
+.skills1 .ttt{
+  margin:  10px 20px 15px;
+  padding: 10px;
+}
+.dll{
+  width: 100%;
+  height: 250px;
+  display: block;
+
+}
+
+.tt1{
+  background: #cacaca;
+    border-radius: 18px;
+    margin: 8px;
+    padding: 8px;
+    margin-top: 40px;
+}
+.tt1 p{
+  margin: 8px;
+  margin-top: 22px;
+}
+.tt1 h3{
+  margin: 24px;
+  text-align: center;
+}
+/* works */
+.Works2 h1{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 42px;
+}
+.Works2 p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.Works2{
+  margin: 0;
+  background: #cacaca;
+  padding: 8px 0;
+  text-align: center;
+}
+
+  .Works1 img{
+    object-fit: cover;
+    width: 340px;
+    height: auto;
+    border: #000;
+    margin: 0;
+    text-align: center;
+  }
+  .Work1 p{
+    margin-bottom: 40px;
+  }
+  .wok{
+    margin: 0 auto;
+  }
+
+/* Contact */
+.Contact{
+  text-align: center;
+  background: #202022;
+  color: white;
+  margin: 0;
+}
+.Contact1{
+  margin: 0;
+}
+.Contact1 h1{
+  font-size: 42px;
+}
+.Contact a {
+  all: unset;
+  border: 1px solid white;
+  border-radius: 18px;
+  color: #fbfeff;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px 60px;
+}
+.Contact a:hover {
+  background-color: white;
+  transition: none;
+  color: black;
+}
+.ini{
+  margin-top:   80px;
+  margin-bottom: 80px;
+}
+.ini p{
+  font-size: 12px;
+}
+.aoa {
+  margin-top: 24px;
+}
+
+#to_top{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  opacity: 0;
+  }
+  #to_top.scrolled{
+  opacity: 1;
+  }
+
+
+  /* tra */
+.love {
+  text-align: center;
+}
+.tra{
+  margin: 2px 20px  3px;
+  text-align: center;
+}
+
+
+  /* main 11*/
+  .main3 {
+    margin: auto;
+  }
+.desc1{
+  margin: 45px;
+}
+.desc1 h2{
+  font-size: 22px;
+}
+.desc1 p{
+  font-size: 12px;
+}
+@media (min-width: 600px) {
+/* Ａp追加 */
+
+#to_top{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  opacity: 0;
+  }
+  #to_top.scrolled{
+  opacity: 1;
+  }
+
+
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+
+  }
+  
+  /* header */
+  .pc-menu {
+    display: block;
+    margin-left: auto;
+  }
+  .pc-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .pc-menu a {
+    display: block;
+    width: 80px;
+    line-height: 64px;
+    text-align: center;
+  }
+
+  .pc-menu a:hover {
+    background: #f2f2f2;
+  }
+  .sp-menu {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    margin: 10px 100px 0 100px;
+    gap: 32px;
+    padding: 50px 100px;
+  }
+  .main3 {
+    display: flex;
+    margin: 10px 100px 0 100px;
+    gap: 32px;
+    padding: 50px 100px;
+  }
+  .desc1 {
+    margin: 3px;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 80px;
+  }
+  /* main1 */
+.main1{
+  text-align: center;
+  padding: 2px 30px;
+  margin-top: 100px;
+  }
+  .desc {
+    margin: 3px;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 80px;
+  }
+  /* main */
+  .main {
+  margin: auto;
+  }
+  .main a {
+    all: unset;
+    border: 1px solid #202022;
+    color: #202022;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 30px;
+  }
+  .main a:hover {
+    background-color: #cacaca;
+    transition: none;
+    color: white;
+  }
+ 
+  .main img{
+    width: 300px;
+    height: 350px;
+    margin: auto;
+  }
+
+  .main3 img{
+    width: 300px;
+    height: 350px;
+    margin: auto;
+  }
+
+  /* name */
+
+.name h1{
+  font-size: 60px;
+}
+.name{
+  margin: 0 0 0 200px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 200px;
+}
+.niwa3{
+  width: 450px;
+  height: 550px;
+  margin: 0;
+}
+.Works1{
+  display: flex;
+  gap: 18px;
+}
+.Works2{
+  margin: 0 auto;
+  background: #cacaca;
+  padding: 8px 15px;
+  text-align: center;
+}
+
+.Works1 img{
+  object-fit: cover;
+  width: 400px;
+  height: auto;
+  border: #000;
+
+  text-align: center;
+}
+/* enn */
+.enn {
+  width: 200px;
+  height: 200px;
+  margin: 50px 0 0 120px;
+  font-size: 12px;
+}
+div svg {
+  overflow: visible;
+}
+div path {
+  fill: none;
+}
+div text {
+  fill: black;
+}
+
+.block {
+  width: 160px;
+  height: 160px;
+  margin: auto;
+}
+.circleText {
+  overflow: visible;
+  animation: rotation 18s linear infinite;
+  &__circle {
+    fill: none;
+  }
+  &__text {
+    fill: #000;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+  .desc1{
+    margin: 20px;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.skills1 .ttt{
+  display: flex;
+  margin: 30px 150px 80px 150px;
+  gap: 18px;
+  padding: 10px;
+}
+
+
+
+/* tra */
+.like1{
+  text-align: center;
+}
+.tra{
+  display: flex;
+  margin: 30px 50px  50px;
+}
+}
+
+
+
+  .main {
+    margin: auto;
+    }
+  .main a {
+    all: unset;
+    border: 1px solid #202022;
+    color: #202022;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 30px;
+  }
+  .main a:hover {
+    background-color: #cacaca;
+    transition: none;
+    color: white;
+  }
+  .des1{
+    margin-top: 30px;
+  }
+ 
+.tra img{
+  width: 250px;
+  height: 250px;
+  margin: 10px 30px  5px;
+}
+.yoy p{
+  font-size: 12px;
+  margin: 20px;
+  margin-top: 8px;
+}
+
+/*  */
+.name3 {
+  opacity: 0;
+  transition: opacity 3s, transform 2s;
+}
+
+.name3.r {
+  transform: translateY(-10px);
+}
+
+.name3.appear {
+  opacity: 1;
+  transform: none;
+}
+
+.niwa3 {
+  opacity: 0;
+  transition: opacity 10s, transform 5s;
+
+}
+
+.niwa3 {
+  transform: translateY(-100px);
+}
+
+.niwa3.appear {
+  opacity: 1;
+  transform: none;
+}
+
+
+
+.yoy {
+  opacity: 0;
+  transition: opacity 5s, transform 3s;
+
+}
+.yoy {
+  transform: translateY(0);
+}
+
+.yoy.appear {
+  opacity: 1;
+  transform: none;
+}
+.main3 {
+  transform: translateY(0);
+}
+
+.main3.appear {
+  opacity: 1;
+  transform: none;
+}
+.main3 {
+  opacity: 0;
+  transition: opacity 2s, transform 3s;
+}
+.desc1 {
+  transform: translatex(-30px);
+}
+
+.desc1.appear {
+  opacity: 1;
+  transform: none;
+}
+.desc1 {
+  opacity: 0;
+  transition: opacity 2s, transform 3s;
+}
+
+.main11{
+  margin-bottom: 3px;
+  text-align: center;
+  margin: 0 30px 0;
+}
+.pic1{
+  margin: auto;
+}
+.desc {
+  opacity: 0;
+  transition: opacity 3s, transform 2s;
+}
+
+.desc {
+  transform: translateX(+300px);
+}
+
+.desc.appear {
+  opacity: 1;
+  transform: none;
+}
+
+.Works1 {
+  opacity: 0;
+  transition: opacity 3s, transform 2s;
+}
+
+
+
+.Works1 {
+  transform: translateY(0);
+}
+
+.Works1.appear {
+  opacity: 1;
+  transform: none;
+}
+.skills1 {
+  opacity: 0;
+  transition: opacity 2s, transform 3s;
+}
+
+.skills1 {
+  transform: translateY(-50px);
+}
+
+.skills1.appear {
+  opacity: 1;
+  transform: none;
+}
+
+.ini {
+  opacity: 0;
+  transition: opacity 2s, transform 3s;
+  transform: translateY(-50px);
+}
+
+.ini.appear {
+  opacity: 1;
+  transform: none;
+}
+
+.en1 {
+  width: 10px;
+  height: 10px;
+  margin: 0 0 0 220px;
+  font-size: 8px;
+}
+
+.block1 {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
