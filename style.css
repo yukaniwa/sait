@@ -580,6 +580,20 @@ div text {
   display: flex;
   margin: 30px 50px  50px;
 }
+
+.desc {
+  opacity: 0;
+  transition: opacity 3s, transform 2s;
+}
+
+.desc {
+  transform: translateX(+300px);
+}
+
+.desc.appear {
+  opacity: 1;
+  transform: none;
+}
 }
 
 
@@ -673,7 +687,7 @@ div text {
   transition: opacity 2s, transform 3s;
 }
 .desc1 {
-  transform: translatex(-30px);
+  transform: translateY(+30px);
 }
 
 .desc1.appear {
@@ -699,7 +713,7 @@ div text {
 }
 
 .desc {
-  transform: translateX(+300px);
+  transform: translateX(0);
 }
 
 .desc.appear {
